@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 export default class PokeItem extends React.Component {
     render() {
@@ -17,7 +17,7 @@ return (
     <div>
         <p><img src={ url_image }/></p>
         <p>pokemon: { pokemon }</p>
-        <p>type_1: { type_1 }</p>
+        <p>type: { type_1 }</p>
         <p>hp: { hp }</p>
     </div>
     //not sure why this is red.
