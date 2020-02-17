@@ -4,8 +4,8 @@ export default class SearchBar extends Component {
     render() {
         return (
         < form onSubmit={this.props.handleSearch}>
-            value={this.props.searchQuery}
-            onChange={this.props.handleChange}
+            <input value={this.props.searchQuery}
+            onChange={this.props.handleChange}></input>
             <button>Get Pokemon</button>
         </form>
         )
