@@ -10,8 +10,6 @@ import Detail from './details.js';
 import Home from './home.js';
 import About from './about.js';
 import pokeball from './assets/pokeball.jpg';
-
-import request from 'superagent';
 import './App.css';
 
 
@@ -23,11 +21,11 @@ export default class App extends Component {
         <div>
           <h2>Pokemon search</h2>
           <Link to="/">Homepage</Link>
-          <Link to="/about-me">About Me</Link>
+          <Link to="/about-me/about">About Me</Link>
           <Switch>
             <Route exact path="/:pokemon?" component={Home} />
-            <Route exact path="about-me/" Component={About}/>
-            <Route exact path="/pokemon/:pokemon" component={Detail} />
+            <Route exact path="/about-me/about" component={About}/>
+            <Route path="/pokemon/:pokemon" component={Detail} />
           </Switch>
 
         </div>

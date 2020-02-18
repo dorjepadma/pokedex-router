@@ -14,8 +14,9 @@ export default class PokeItem extends React.Component {
 return (
     <>
     { 
-    <div>
-        <p><img src={ url_image }/></p>
+    <div className="pokelist">
+        {/* would this be the url for the css */}
+        <p><img src={ url_image } alt= { pokemon }/></p>
         <p>pokemon: { pokemon }</p>
         <p>type: { type_1 }</p>
         <p>hp: { hp }</p>

@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Heebo', "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-    background: cornsilk;
+    background: lightskyblue;
     margin: 0;
     line-height: 1.5em;
 }
@@ -14,13 +14,14 @@ h1 {
 h1, h2 {
     font-family: 'Oswald';
     font-weight: bold;
+    font-size: 48px;
 }
 
 * {
     box-sizing: border-box;
 }
 img {
-    width: 33%;
+    width: 20%;
     height: auto;
 }
 header, main {
@@ -32,7 +33,9 @@ header {
     align-items: center;
     justify-content: space-around;
     background: white;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid red;
+    border-bottom-width: thick;
+    
 }
 
 h1 {
@@ -40,20 +43,20 @@ h1 {
     flex-grow: 1;
 }
 
-.options {
+/* .options {
     padding: 10px 0;
-}
+} */
 
-section {
+/* section {
     margin: 20px auto;
     width: 90%;
     min-width: 650px;
-}
-.info-container
+} */
+/* .info-container
 {
 font-size: 1.5em;
 margin-left: 20px;
-}
+} */
 
 .pokemon {
     display: flex;
@@ -94,11 +97,15 @@ margin-left: 20px;
     height: 50%
 }
 .image-container img {
-    height: 100%;
+    height: 50%;
     object-fit: contain;
 }
 .pokemon-type-filter {
     height: 40px;
     width: 150px;
     font-size: 1.2em;
+}
+.pokeList {
+    width: 50%;
+    height: auto;
 }

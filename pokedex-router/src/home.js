@@ -23,12 +23,14 @@ export default class Home extends Component {
 
         this.setState({
             pokemon:data.body.results, })
+
+            this.props.history.push(this.state.searchQuery)
         
     }
     handleChange = async (e) => this.setState({ searchQuery: e.target.value })
 
     render() {
-       console.log(this.state);
+       
         return (
             <div className="App">
             <header className="App-header">
@@ -41,7 +43,7 @@ export default class Home extends Component {
             <ul>
             { this.state.pokemon.map(pokemon=> 
             
-                <Link to={`pokemon/${pokemon.name}`}>
+                <Link to={`pokemon/${pokemon.pokemon}`}>
                 <PokeItem pokemonObject={pokemon} />
                 </Link>)
             }
